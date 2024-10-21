@@ -41,8 +41,8 @@ def test_muestra_evolucion_poblacion(lista_años, lista_habitantes, nombre):
     plt.show()
 
 
-def test_muestra_comparativa_paises_anyo(lista_paises, lista_habitantes,año, listanombres):
-    titulo = f'Comparacion de poblacion en el año {año} de los paises {listanombres}'
+def test_muestra_comparativa_paises_anyo(lista_paises, lista_habitantes,año):
+    titulo = f'Comparacion de poblacion en el año {año}'
 
     plt.title(titulo)
     plt.bar(lista_paises, lista_habitantes)
@@ -60,11 +60,11 @@ if __name__=="__main__":
     #nombrepais = 'ESP'
     #filtrado = filtra_por_pais(datos, nombrepais)
     #test_filtra_por_pais(filtrado, nombrepais)
-    listanombres = ['Tanzania','Micronesia','Mexico']
-    año = 2000
+    #listanombres = ['Tanzania','Micronesia','Mexico']
+    #año = 2000
     #listanyo = filtra_por_paises_y_anyo(datos, año, listanombres)
     #test_filtra_por_paises_y_anyo(listanyo, año, listanombres)
     #lista_años, lista_habitantes = muestra_evolucion_poblacion(datos, nombrepais)
     #test_muestra_evolucion_poblacion(lista_años, lista_habitantes, nombrepais)
-    lista_paises2, lista_habitantes2 = muestra_comparativa_paises_anyo(datos, año, listanombres)
-    test_muestra_comparativa_paises_anyo(lista_paises2, lista_habitantes2,año, listanombres)
+    #lista_paises2, lista_habitantes2 = muestra_comparativa_paises_anyo(datos, año, listanombres)
+    #test_muestra_comparativa_paises_anyo(lista_paises2, lista_habitantes2,año)

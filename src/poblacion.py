@@ -31,7 +31,7 @@ def filtra_por_pais(poblaciones, nombre_o_codigo):
 
     for linea in poblaciones:
         if nombre_o_codigo == linea.pais or nombre_o_codigo == linea.codigo:
-            tupla = (nombre_o_codigo, linea.año, linea.censo)
+            tupla = ( linea.año, linea.censo)
             res.append(tupla)
     return res
 
